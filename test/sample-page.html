@@ -89,23 +89,23 @@
                     <script>
                         var grid_css = "../lib/css/ab-compensation-tools.css";
 
-                        // Test using gridConfigCallback to hide PublicSectorBody column
-                        var gridConfigCallback = function (config) {
-                            var findFieldByName = function (fields, name) {
-                                return $.grep(fields, function (n, i) {
-                                    return n.name == name;
-                                });
-                            };
-                            var fields = config.fields;
-                            $(findFieldByName(fields, "PublicSectorBody"))
-                                .attr("visible", false);
-                            $(findFieldByName(fields, "Compensation"))
-                                .attr("width", "15%");
-                            $(findFieldByName(fields, "Other"))
-                                .attr("width", "13%");
-                            $(findFieldByName(fields, "Severance"))
-                                .attr("width", "13%");
-                        };
+                        //// Test using gridConfigCallback to hide PublicSectorBody column
+                        //var gridConfigCallback = function (config) {
+                        //    var findFieldByName = function (fields, name) {
+                        //        return $.grep(fields, function (n, i) {
+                        //            return n.name == name;
+                        //        });
+                        //    };
+                        //    var fields = config.fields;
+                        //    $(findFieldByName(fields, "PublicSectorBody"))
+                        //        .attr("visible", false);
+                        //    $(findFieldByName(fields, "Compensation"))
+                        //        .attr("width", "15%");
+                        //    $(findFieldByName(fields, "Other"))
+                        //        .attr("width", "13%");
+                        //    $(findFieldByName(fields, "Severance"))
+                        //        .attr("width", "13%");
+                        //};
                     </script>
                     <script type="text/javascript" src="../lib/js/ab-compensation-tools.js"></script>
                     <!-- ab-compensation-tools above -->
