@@ -1,10 +1,28 @@
 ﻿/*
-Alberta Compensation Transparency Toolkit v1.1
+Alberta Compensation Transparency Toolkit v1.1.1
 */
 
 #grid {
     color: #2e2e2e;
     overflow: visible;
+}
+
+#grid table {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    table-layout: fixed;
+}
+
+#grid a {
+    font-weight: normal;
+    text-decoration: none;
+    color: #0081ab;
+}
+
+#grid a:hover {
+    color: #00aad2;
+    border-bottom: 1px solid #00aad2;
 }
 
 #grid .attachmentLink 
@@ -36,8 +54,11 @@ Alberta Compensation Transparency Toolkit v1.1
     border-color: inherit;
 }
 
-#grid .jsgrid-header-row>th {
+#grid .jsgrid-header-row>th,
+#grid .jsgrid-table td,
+#grid td {
     padding: 0.5em 0.3em 0.3em 0.5em;
+    word-wrap:break-word;
 }
 
 #grid .jsgrid-grid-body td, #grid .jsgrid-grid-header, #grid .jsgrid-header-row>th, #grid .jsgrid-grid-body {
